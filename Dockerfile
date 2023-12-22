@@ -13,8 +13,8 @@ ENV NODE_ENV=production DB_HOST=item-db
 # install dependencies
 RUN npm install --production --unsafe-perm && npm run build
 
-# jalankan perintah npm start
-CMD ["npm", "start"]
-
 # publish pada port 8080
 EXPOSE 8080
+
+# jalankan perintah npm start
+CMD ["npm", "start"]
